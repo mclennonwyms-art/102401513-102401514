@@ -117,3 +117,8 @@ test('撤回的信息可以恢复到之前的状态', () => {
   assert.equal(item.status, '寻找中');
   assert.equal(item.withdrawn, false);
 });
+
+test('不存在的信息编号不能更新状态', () => {
+  const result = Core.updateItemStatus(sampleItems, 'not-exist');
+  assert.equal(result.changed, false);
+});

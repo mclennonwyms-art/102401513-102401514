@@ -28,7 +28,7 @@ campus-lost-found-prototype/
 │     ├─ style.css             页面样式和手机端适配
 │     └─ campus-hero-v3.png    首页校园图片
 ├─ tests/
-│  └─ core.test.js             17个自动化测试
+│  └─ core.test.js             22个自动化测试
 ├─ docs/
 │  ├─ BLOG.md                  第一次结对作业博客
 │  ├─ 第二次结对作业博客.md     本次作业博客模板
@@ -64,7 +64,7 @@ campus-lost-found-prototype/
 node --test tests/core.test.js
 ```
 
-测试不需要安装 npm 包。当前共有 21 个测试，覆盖搜索、筛选、发布校验、信息创建、状态修改、撤回与恢复、联系方式隐藏、搜索记录和输入安全处理。
+测试不需要安装 npm 包。当前共有 22 个测试，覆盖搜索、筛选、发布校验、信息创建、状态修改、撤回与恢复、联系方式隐藏、搜索记录和输入安全处理。
 
 ## 数据说明
 
