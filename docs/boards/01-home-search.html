@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;width:3000px;height:1080px;background:#e8eee5;color:#28352c;font-family:"Microsoft YaHei",sans-serif;padding:54px 48px;overflow:hidden}.title{font-size:36px;font-weight:800;margin:0 0 8px}.sub{font-size:16px;color:#788278;margin-bottom:35px}.line{height:1px;background:#cad5c7;margin-bottom:34px}.frames{display:flex;gap:20px;align-items:flex-start}.frame{width:342px}.shot{width:342px;height:740px;object-fit:cover;object-position:top;border-radius:12px;border:1px solid #cdd7ca;background:#fff;box-shadow:0 8px 20px rgba(46,67,48,.06)}.caption{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:14px}.caption b{font-size:16px}.caption span{color:#778278;font-size:12px}.note{margin-top:28px;border-left:5px solid #3f6239;background:rgba(255,255,255,.55);padding:15px 18px;width:900px;font-size:14px;line-height:1.7;color:#526053}</style></head><body>
+<div class="title">01 首页与搜索</div><div class="sub">首页浏览 → 搜索输入 → 结果加载 → 组合筛选 · 完整覆盖正常、等待、异常与空状态</div><div class="line"></div>
+<div class="frames">
+<div class="frame"><img class="shot" src="../images/v2/01-home.png"><div class="caption"><b>01 首页</b><span>校园信息流</span></div></div>
+<div class="frame"><img class="shot" src="../images/v2/02-home-loading.png"><div class="caption"><b>02 加载骨架</b><span>降低等待焦虑</span></div></div>
+<div class="frame"><img class="shot" src="../images/v2/03-home-error.png"><div class="caption"><b>03 加载失败</b><span>保留重试入口</span></div></div>
+<div class="frame"><img class="shot" src="../images/v2/04-search-idle.png"><div class="caption"><b>04 搜索输入</b><span>历史与热门词</span></div></div>
+<div class="frame"><img class="shot" src="../images/v2/05-search-results.png"><div class="caption"><b>05 搜索结果</b><span>分类与筛选</span></div></div>
+<div class="frame"><img class="shot" src="../images/v2/06-search-loading.png"><div class="caption"><b>06 结果加载</b><span>反馈当前任务</span></div></div>
+<div class="frame"><img class="shot" src="../images/v2/07-search-empty.png"><div class="caption"><b>07 无结果</b><span>提供恢复建议</span></div></div>
+<div class="frame"><img class="shot" src="../images/v2/08-filter-open.png"><div class="caption"><b>08 筛选展开</b><span>区域与时间</span></div></div>
+</div><div class="note">改进点：相比只展示正常页面，本方案补齐了加载、失败和无结果状态；筛选项限制在区域与时间，避免功能膨胀，也为下一次代码实现保留清晰边界。</div>
+</body></html>
