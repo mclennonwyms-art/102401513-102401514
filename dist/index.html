@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#3f6239">
+  <meta name="description" content="拾光——校园失物招领信息发布与查询平台">
+  <title>拾光 · 校园失物招领</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233f6239'/%3E%3Cpath d='M19 22h26v26H19z' fill='%23fffdf8'/%3E%3Cpath d='M23 17h18v9H23z' fill='%23e6a94a'/%3E%3Ccircle cx='32' cy='35' r='6' fill='%233f6239'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <aside class="prototype-notes" aria-label="项目说明">
+    <span class="eyebrow">CAMPUS LOST &amp; FOUND</span>
+    <h1>让每一件遗失<br>都有回来的方向。</h1>
+    <p>拾光集中展示校园寻物与招领信息。你可以发布、搜索、查看联系方式，并在物品找回后及时更新状态。</p>
+    <div class="demo-paths">
+      <button data-demo="browse"><b>01</b><span>查看信息 → 查看详情</span></button>
+      <button data-demo="publish"><b>02</b><span>发布信息 → 发布成功</span></button>
+      <button data-demo="search"><b>03</b><span>搜索物品 → 查看结果</span></button>
+    </div>
+    <small>数据保存在当前浏览器中 · 无需安装</small>
+  </aside>
+
+  <main class="phone" aria-label="拾光小程序原型">
+    <div class="statusbar"><span>14:00</span><span>拾光</span><span>● 5G ▰</span></div>
+    <div id="app" class="app-shell" aria-live="polite"></div>
+    <nav id="tabbar" class="tabbar" aria-label="主导航">
+      <button class="tab active" data-route="home" aria-label="首页"><span>⌂</span><em>首页</em></button>
+      <button class="tab" data-route="search" aria-label="搜索"><span>⌕</span><em>搜索</em></button>
+      <button class="tab publish-tab" data-route="publish" aria-label="发布"><span>＋</span><em>发布</em></button>
+      <button class="tab" data-route="mine" aria-label="我的"><span>♙</span><em>我的</em></button>
+    </nav>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="assets/core.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
